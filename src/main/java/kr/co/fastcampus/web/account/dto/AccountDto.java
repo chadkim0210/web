@@ -15,6 +15,7 @@ public class AccountDto {
     private String username;
     private String password;
 
+    // dto로 받은 데이터를 model로 변환해줌
     public AccountModel toModel() {
         return new AccountModel(id, username, password);
     }

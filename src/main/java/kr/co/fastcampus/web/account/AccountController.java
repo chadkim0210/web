@@ -25,6 +25,7 @@ public class AccountController {
         return mv;
     }
 
+    // post로 account에 던졌을때 받아서 처리해주는 영역
     @PostMapping("/account")
     public ModelAndView create(AccountDto dto) {
         ModelAndView mv = new ModelAndView("redirect:/account");
